@@ -1,125 +1,87 @@
-# Victor Hugo
+<p align="center" style="padding-top:20px">
+ <img width="100px" src="images/logo-tailbliss-round.svg" align="center" alt="GitHub Readme Stats" />
+ <h1 align="center">TailBliss</h1>
+ <p align="center">TailBliss is an opinionated Hugo Starter with Tailwind CSS 3.2 and Alpine.js with light/dark modes.</p>
+</p>
+  <p align="center">
+    <a href="https://github.com/nusserstudios/tailbliss/actions/">
+      <img alt="Tests Passing" src="https://github.com/nusserstudios/tailbliss/actions/workflows/codeql.yml/badge.svg" />
+    </a>
+    <a href="https://github.com/nusserstudios/tailbliss/contributors">
+      <img alt="GitHub Contributors" src="https://img.shields.io/github/contributors/nusserstudios/tailbliss?color=0088ff" />
+    </a>
+    <a href="https://github.com/nusserstudios/tailbliss/issues">
+      <img alt="Issues" src="https://img.shields.io/github/issues/nusserstudios/tailbliss?color=fc0b03" />
+    </a>
+    <a href="https://github.com/nusserstudios/tailbliss/pulls">
+      <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/nusserstudios/tailbliss?color=f97316" />
+    </a>
+    <a href="https://app.netlify.com/sites/tailbliss/deploys">
+      <img alt="Netlify Deploys" src="https://api.netlify.com/api/v1/badges/2baf2850-0f9e-49ff-833b-7b1f2db19597/deploy-status" />
+    </a>
+    <br />
+    <br />
+    <a href="https://gohugo.io/">
+      <img src="https://img.shields.io/badge/Hugo%20-0.105.0%20-gray.svg?colorA=c9177e&colorB=FF4088&style=for-the-badge"/>
+    </a>
+    <a href="https://tailwindcss.com/">
+      <img src="https://img.shields.io/badge/TailwindCSS%20-V3-gray.svg?colorA=0284c7&colorB=38bdf8&style=for-the-badge"/>
+    </a>
+    <a href="https://alpinejs.dev/">
+      <img src="https://img.shields.io/badge/Alpine.js%20-V3-gray.svg?colorA=68a5af&colorB=77c1d2&style=for-the-badge"/>
+    </a>
+  </p>
 
-⚠️ **Deprecation Notice** 🏳
+  <p align="center">
+    <a href="https://tailbliss.netlify.app/">View Demo</a>
+    ·
+    <a href="https://github.com/nusserstudios/tailbliss/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/nusserstudios/tailbliss/discussions/categories/feature-request">Request Feature</a>
+    ·
+    <a href="https://github.com/nusserstudios/tailbliss/discussions/categories/general">Ask Question</a>
+  </p>
+</p>
 
-We are focusing our resources on building new templates that help you build a better web, because of that we're deprecating this template. We care about the community so we propose if anyone wants to maintain or take stewardship over the project please contact us at [devexperience@netlify.com](mailto:devexperience@netlify.com). If you want to share anything with the team about this template, you can also fill out [this form](https://template-feedback.netlify.app/).
+<p align="center">
+<img src="https://raw.githubusercontent.com/nusserstudios/tailbliss/main/images/tailbliss-lighthouse-11-03-22.png" alt="Tailbliss Google Lighthouse Score" style="margin: 25px auto; max-width: 830px" width="100%" height="" />
+</p>
 
-As an alternative to this repository, we're recommending to take a look at [Hyas](https://github.com/h-enk/hyas) as a project to make use of. It is focused on latest practices with Hugo and is already completely Netlify deploy ready.
+**Install to VS Code with:**  
+`git clone git@github.com:nusserstudios/tailbliss your-name`
 
----
+##### Install with NPM 
+`npm install`
+##### Install with Yarn
+`yarn`
 
-**A Hugo boilerplate for creating truly epic websites**
+**To start developing:**
+##### Develop with NPM 
+`npm run start`
+##### Develop with Yarn
+`yarn start`
 
-This is a boilerplate for using [Hugo](https://gohugo.io/) as a static site generator and [Webpack 5](https://webpack.js.org/) as your asset pipeline.
+**To generate the site HTML:**
+##### Build with NPM 
+`npm run build`
+##### Build with Yarn
+`yarn build`
 
-Victor Hugo setup to use [PostCSS v8](http://postcss.org/) and [Babel v7](https://babeljs.io/) for CSS and JavaScript compiling/transpiling.
+**npm run start** will run two commands parallel:  
+`npx tailwindcss -i ./assets/css/main.css -o ./assets/css/style.css --watch`
 
-This project is released under the [MIT license](LICENSE). Please make sure you understand its implications and guarantees.
+Has paginated Categories and Tags. Markdown files will automatically convert images put into `/assets` folder to .webp images. 
 
-## Usage
+## Image shortcodes for webp as well.
+{{< imgh src="img-name.jpg" alt="Place alt text here." >}}
 
-### :exclamation: Prerequisites
+<a href="https://www.buymeacoffee.com/nusserstudios" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-blue.png" alt="Buy Me A Coffee" height="41" width="174"></a>
 
-This template has been tested to work with [Node.js](https://nodejs.org/en/download/) v16 and [npm](https://www.npmjs.com/get-npm) v6.
+## Credits
+4044ever - Original Theme
+https://github.com/4044ever/Hugo-Tailwind-3.0.git
 
-Next step, clone this repository and run:
+Jan Heise - Alpine.js Navbar
+https://github.com/jan-heise/responsive-navbar-with-dropdown
 
-```bash
-npm install
-```
-
-This will take some time and will install all packages necessary to run Victor Hugo and its tasks.
-
-### :construction_worker: Development
-
-While developing your website, use:
-
-```bash
-npm start
-```
-
-or for developing your website with `hugo server --buildDrafts --buildFuture`, use:
-
-```bash
-npm run preview
-```
-
-Then visit http://localhost:3000/ _- or a new browser windows popped-up already -_ to preview your new website. Webpack Dev Server will automatically reload the CSS or refresh the whole page, when stylesheets or content changes.
-
-### :package: Static build
-
-To build a static version of the website inside the `/dist` folder, run:
-
-```bash
-npm run build
-```
-
-To get a preview of posts or articles not yet published, run:
-
-```bash
-npm run build:preview
-```
-
-See [package.json](package.json#L8) for all tasks.
-
-## Structure
-
-```
-|--site                // Everything in here will be built with hugo
-|  |--content          // Pages and collections - ask if you need extra pages
-|  |--data             // YAML data files with any data for use in examples
-|  |--layouts          // This is where all templates go
-|  |  |--partials      // This is where includes live
-|  |  |--index.html    // The index page
-|  |--resources        // This is where all assets go
-|  |--static           // Files in here ends up in the public folder
-|--src                 // Files that will pass through the asset pipeline
-|  |--css              // Webpack will bundle imported css separately
-|  |--index.js         // index.js is the webpack entry for your css & js assets
-```
-
-## Basic Concepts
-
-You can read more about Hugo's template language in their documentation here:
-
-https://gohugo.io/templates/overview/
-
-The most useful page there is the one about the available functions:
-
-https://gohugo.io/templates/functions/
-
-For assets that are completely static and don't need to go through the asset pipeline,
-use the `site/static` folder. Images, font-files, etc, all go there.
-
-Files in the static folder end up in the web root. So a file called `site/static/favicon.ico`
-will end up being available as `/favicon.ico` and so on...
-
-The `src/index.js` file is the entrypoint for webpack and will be built to `/dist/main.js`
-
-You can use **ES6** and use both relative imports or import libraries from npm.
-
-Any CSS file imported into the `index.js` will be run through Webpack, compiled with [PostCSS Next](http://cssnext.io/), and
-minified to `/dist/[name].[hash:5].css`. Import statements will be resolved as part of the build.
-
-## Environment variables
-
-To separate the development and production _- aka build -_ stages, all tasks run with a node environment variable named either `development` or `production`.
-
-You can access the environment variable inside the theme files with `getenv "NODE_ENV"`. See the following example for a conditional statement:
-
-    {{ if eq (getenv "NODE_ENV") "development" }}You're in development!{{ end }}
-
-All tasks starting with _build_ set the environment variable to `production` - the other will set it to `development`.
-
-## Deploying to Netlify
-
-- Push your clone to your own GitHub repository.
-- [Create a new site on Netlify](https://app.netlify.com/start) and link the repository.
-
-Now Netlify will build and deploy your site whenever you push to git.
-
-You can also click this button:
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/netlify/victor-hugo)
-
-## Enjoy!! 😸
+Made for Hacktoberfest, with ❤️ by NusserStudios.
